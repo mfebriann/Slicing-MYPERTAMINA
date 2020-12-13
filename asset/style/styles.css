@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+}
+
+.container section.hero {
+    background-image: url(../img/Photo-Refinery.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 25px 30px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+nav.scroll {
+    background-color: #fff;
+    border-bottom: 3px solid orangered;
+    transition: 300ms ease-in;
+}
+
+.container nav .hamburger-menu {
+    display: none;
+}
+
+.container nav h1 {
+    font-size: 2em;
+    letter-spacing: 8px;
+    color: #e90000;
+}
+
+.container nav a {
+    text-decoration: none;
+}
+
+.container nav h1 span {
+    opacity: .4;
+}
+
+.container nav ul {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+}
+
+.container nav ul li {
+    margin-left: 30px;
+}
+
+.container nav ul li:first-child {
+    border-bottom: 3px solid orange;
+}
+
+.container nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: 300ms ease-in-out;
+}
+
+.container nav ul li a:hover {
+    color: #e90000;
+}
+
+.container .call-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    position: relative;
+}
+
+.container .call-point h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.container .call-point .icons {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.container .call-point .icons img {
+    width: 90px;
+    height: 90px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.container .hero .circle {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .hero .circle span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(238, 238, 238, .7);
+    cursor: pointer;
+}
+
+.container .hero .circle span:nth-child(2) {
+    margin: 0 20px;
+}
+
+.container .hero .circle span:first-child {
+    background-color: #fff;
+}
+
+.container #about {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container #about img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.container #about .bawah {
+    display: block;
+}
+
+.container #about .bookmark p:nth-child(2),
+.container #about .heart p:nth-child(2),
+.container #about .monitoring p:nth-child(2) {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container #about .bookmark p:nth-child(3),
+.container #about .heart p:nth-child(3),
+.container #about .monitoring p:nth-child(3) {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.container h3 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5em;
+}
+
+.container hr {
+    margin-top: 80px;
+    border: 1px solid rgba(255, 165, 0, .4);
+}
+
+.container #project {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 0 25px;
+    gap: 40px;
+}
+
+.container #project img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    justify-self: end;
+    transition: 150ms ease-in-out;
+}
+
+.container #project img:hover {
+    filter: grayscale(1);
+}
+
+.container #project .text-project {
+    padding-top: 80px;
+    justify-self: center;
+}
+
+
+.container #project .text-project span {
+    display: block;
+}
+
+.container #project .text-project h2 {
+    font-size: 2.6em;
+    line-height: 60px;
+}
+
+
+.container #project .text-project p {
+    font-size: 1.6em;
+    margin-top: 25px;
+}
+
+.container #project .text-project a {
+    margin-top: 25px;
+    display: inline-block;
+    color: orangered;
+    font-size: 1.3em;
+}
+
+.container #service {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-top: 100px;
+    padding: 0 30px;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.container #service .img-service {
+    object-fit: cover;
+    object-position: right;
+    width: 400px;
+    height: 100%;
+    transition: 150ms ease-in-out;
+}
+
+.container #service .img-service>img {
+    object-fit: cover;
+    object-position: right;
+    width: 100%;
+    height: 100%;
+    transition: 150ms ease-in-out;
+}
+
+.container #service .img-service>img:hover {
+    filter: grayscale(1);
+}
+
+.container #service .sub-service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.container #service .sub-service .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(238, 238, 238, .7);
+    padding: 30px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.container #service .sub-service .services:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.container #service .sub-service .services>img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.container #service .sub-service .services p {
+    margin-top: 20px;
+}
+
+.container #service .sub-service .services p .bawah {
+    display: block;
+}
+
+.container #blog {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.container #blog h2 {
+    font-size: 2em;
+}
+
+.container #blog p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+
+.container #blog .bawah {
+    display: block;
+}
+
+.container #blog .content-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.container #blog .content-blog .content {
+    display: flex;
+    column-gap: 25px;
+}
+
+.container #blog .content-blog .content img {
+    width: 200px;
+    transition: 150ms ease-in-out;
+}
+
+.container #blog .content-blog .content img:hover {
+    filter: grayscale(1);
+}
+
+.container #blog .content-blog .content p:first-child {
+    color: rgb(95, 95, 95);
+}
+
+.container #blog .content-blog .content p:nth-child(2) {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.container #blog .content-blog .content p .bawah {
+    display: block;
+}
+
+.container #blog .content-blog .content a {
+    color: orangered;
+    transition: 300ms ease-in;
+    display: inline-block;
+}
+
+.container #blog .content-blog .content a:hover {
+    margin-left: 20px;
+}
+
+.container #contact {
+    background-color: rgb(255, 94, 1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.container #contact h2 {
+    font-size: 2em;
+    line-height: 50px;
+}
+
+
+
+.container #contact a button {
+    padding: 20px 80px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 300;
+    transition: 400ms ease-in;
+}
+
+.container #contact a button:hover {
+    color: rgb(255, 94, 1);
+    background-color: #fff;
+}
+
+.container #contact .bawah {
+    display: block;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+footer .bawah {
+    display: block;
+}
+
+footer .about-us h2 {
+    margin-bottom: 20px;
+}
+
+footer .about-us ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #eee;
+    margin-top: 30px;
+}
+
+footer .about-us ul li img {
+    cursor: pointer;
+    width: 30px;
+}
+
+footer .contact-us p {
+    margin: 15px 0;
+}
+
+footer .link-us {
+    text-align: center;
+}
+
+footer .link-us li {
+    margin-top: 15px;
+}
+
+footer .link-us li a {
+    text-decoration: none;
+    color: orangered;
+}
+
+footer .link-us li a:hover {
+    text-decoration: underline;
+}
