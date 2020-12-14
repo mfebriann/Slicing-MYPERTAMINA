@@ -110,8 +110,19 @@
 @media (max-width:576px) {
     .container .call-point h1 {
         font-size: 2em;
-        padding: 0 20px;
     }
+
+    .container h3 {
+        font-size: 2em;
+        padding: 0 30px;
+    }
+
+    .container #project .text-project h2 {
+        font-size: 2.3em;
+        line-height: 60px;
+        text-align: center;
+    }
+
 
     .container #project img {
         width: 450px;
@@ -129,6 +140,14 @@
 
     .container #blog .content-blog {
         grid-template-columns: 1fr;
+    }
+
+    .container #contact {
+        padding: 30px;
+    }
+
+    .container #contact a button {
+        padding: 20px 40px;
     }
 }
 

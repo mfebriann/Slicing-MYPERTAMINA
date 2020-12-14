@@ -26,6 +26,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    max-width: 100%;
 }
 
 .container nav {
@@ -199,7 +200,7 @@ nav.scroll {
 .container #project {
     margin-top: 120px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0 25px;
     gap: 40px;
 }
